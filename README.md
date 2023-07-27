@@ -8,14 +8,14 @@ Industrial Practice: A Survey and Historical Analysis_, currently submitted at t
 The following table provides an overview of our five study subjects from industry. It specifies their domain, which test process we used to investigate optimization techniques, their (development and test) team size, the size of the system under test in source lines of code (SLOC) and in which language the system under test is implemented.
 
 | Company                        | Domain          | Test Process    | Team Size | SLOC   | Language |
-|--------------------------------|-----------------|---------|------|--------|----------|
-| Time[^1]                           | Time Management | A       | 50   | 8 M   | Java     |
+|--------------------------------|-----------------|---------|------:|--------:|----------|
+| Time<sup>[1]</sup>                           | Time Management | A       | 50   | 8 M   | Java     |
 | BVK                            | Finance         | A       | 20   | 300 K | Java     |
 | Dolby                          | Audio           | A       | 10   | 28 K  | C        |
 | ILP                            | ERP             | M       | 5    | 831 K | C\#      |
 | Zeiss                          | Optics          | M       | 90   | 6 M   | C\#      |
 
-[^1] Subject anonymized due to NDA
+<sup>[1]</sup> Subject anonymized due to NDA
 
 ## Survey Questions
 
