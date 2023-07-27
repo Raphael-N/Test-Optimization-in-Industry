@@ -1,9 +1,9 @@
 # Optimization of Automated and Manual Software Tests in Industrial Practice: A Survey and Historical Analysis
 
 This supplementary website enriches the paper _Optimization of Automated and Manual Software Tests in
-Industrial Practice: A Survey and Historical Analysis_, currently submitted at the Research Track of ICSE 2024. We provide more details on the conduct of our empirical study (Section 3 of the paper) and discuss study-subject specific results (Section 4 of the paper).
+Industrial Practice: A Survey and Historical Analysis_, currently submitted at the Research Track of ICSE 2024. We provide more details on our study subjects (Section 3 of the paper), list the questions of our questionnaire (Section 3 of the paper), discuss study-subject specific results (Section 4 of the paper), and provide access to the plotting scripts used for the paper charts, for reproducibility reasons.
 
-## Additional Insights into Study Conduct
+## Additional Insights About Study Subjects
 
 The following table provides an overview of our five study subjects from industry. It specifies their domain, which test process we used to investigate optimization techniques, their (development and test) team size, the size of the system under test in source lines of code (SLOC) and in which language the system under test is implemented.
 
@@ -89,3 +89,9 @@ Second, Pareto testing achieves optimal cost-benefits for the cost limit L<sub>o
 The changes performed in the 2.5-months development phase were widely spread over the whole code base.
 This explains the need of more tests to obtain a similar fault detection rate of the lower optimal cost limit for ILP.
 
+## Plotting Scripts
+
+Due to confidentiality agreements, we cannot provide access to the raw data of our paper. For reproducibility reasons we publish scripts that generate the plots of our paper, which also contain the presented data in an aggregated manner:  
+
+* [Plots for RA1: Test Strategies](https://anonymous.4open.science/r/Test-Optimization-in-Industry-D14E/01_Testing-Strategies-plots-public.ipynb)
+* [Plots for RA2: Test Optimization](https://anonymous.4open.science/r/Test-Optimization-in-Industry-D14E/02_Optimization-plots-public.ipynb)
