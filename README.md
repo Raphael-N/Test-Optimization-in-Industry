@@ -91,7 +91,7 @@ This explains the need of more tests to obtain a similar fault detection rate of
 
 ## Plotting Scripts
 
-Due to confidentiality agreements, we cannot provide access to the raw data of our paper. For reproducibility reasons we publish scripts that generate the plots of our paper, which also contain the presented data in an aggregated manner:  
+Due to confidentiality agreements, we cannot provide access to the raw data obtained during our study. For reproducibility reasons we publish scripts that generate the plots of our paper, which also contain the presented data in an aggregated manner:  
 
 * [Plots for RA1: Test Strategies](https://anonymous.4open.science/r/Test-Optimization-in-Industry-D14E/01_Testing-Strategies-plots-public.ipynb)
 * [Plots for RA2: Test Optimization](https://anonymous.4open.science/r/Test-Optimization-in-Industry-D14E/02_Optimization-plots-public.ipynb)
