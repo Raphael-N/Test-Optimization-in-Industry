@@ -1,21 +1,7 @@
 # Optimization of Automated and Manual Software Tests in Industrial Practice: A Survey and Historical Analysis
 
 This supplementary website enriches the paper _Optimization of Automated and Manual Software Tests in
-Industrial Practice: A Survey and Historical Analysis_, currently submitted at the Research Track of ICSE 2024. We provide more details on our study subjects (Section 3 of the paper), list the questions of our questionnaire (Section 3 of the paper), discuss study-subject specific results (Section 4 of the paper), and provide access to the plotting scripts used for the paper charts, for reproducibility reasons.
-
-## Additional Insights About Study Subjects
-
-The following table provides an overview of our five study subjects from industry. It specifies their domain, which test process we used to investigate optimization techniques, their (development and test) team size, the size of the system under test in source lines of code (SLOC) and in which language the system under test is implemented.
-
-| Company                        | Domain          | Test Process    | Team Size | SLOC   | Language |
-|--------------------------------|-----------------|---------|------:|--------:|----------|
-| Time<sup>[1]</sup>                           | Time Management | A       | 50   | 8 M   | Java     |
-| BVK                            | Finance         | A       | 20   | 300 K | Java     |
-| Dolby                          | Audio           | A       | 10   | 28 K  | C        |
-| ILP                            | ERP             | M       | 5    | 831 K | C\#      |
-| Zeiss                          | Optics          | M       | 90   | 6 M   | C\#      |
-
-<sup>[1]</sup> Subject anonymized due to NDA
+Industrial Practice: A Survey and Historical Analysis_, currently submitted for the journal Transactions on Software Engineering. We list the questions of our questionnaire (Section 3 of the paper), discuss study-subject specific results (Section 4 of the paper), and provide access to the plotting scripts used for the paper charts, for reproducibility.
 
 ## Survey Questions
 
@@ -56,14 +42,14 @@ For Time, the whole test suite runs in the same testing environment but consists
 For Pareto testing and the calculated optimal cost limit $L_o$ = 25%, two sub-test suites (i.e., teams) would have missed build failures.
 For test impact analysis, the input time range covered a - for automated tests - comparably large time span of a whole week with comparably many code changes.
 In turn, this resulted in the ineffective selection of test cases (see also RQ<sub>2.3</sub> in Section 4).
-Figure 4 does not report on fault detection rates for new test failures at Time since the collection of meaningful data would have required too many resources in their testing environment.
+Figure 6 does not report on fault detection rates for new test failures at Time since the collection of meaningful data would have required too many resources in their testing environment.
 
 
 ### BVK
 This subject uses a concept called _chained testing_, where, at first, individual test cases are run and then the same test cases are run within chained test cases.
 This way, the output of one test case serves as input for the next test case.
 Since chained tests are more expensive to run than individual test cases, both optimization techniques prefer individual test cases for their selection and prioritization.
-This is why it can take a long time to detect failures of chained test cases, which explains why in Section 4, the fault detection rate of Pareto testing for BVK in Figure 4 is relatively low and accelerates towards the end.
+This is why it can take a long time to detect failures of chained test cases, which explains why in Section 4, the fault detection rate of Pareto testing for BVK in Figure 6 is relatively low and accelerates towards the end.
 Notably, failing chained tests are often redundant with a failing individual test case, so, it is less critical to miss these.
 
 
@@ -75,7 +61,7 @@ The results of RQ<sub>2.1</sub> in Section 4, show that test impact analysis yie
 
 ### ILP
 After our study, the subject's team reported that test impact analysis _just works and shows awesome results_.
-Besides this positive feedback, they note that the _test case selection is less effective and meaningful_, which is also shown as result for RQ<sub>2.3</sub> in Figure 5b.
+Besides this positive feedback, they note that the _test case selection is less effective and meaningful_, which is also shown as result for RQ<sub>2.3</sub> in Figure 7b.
 First, this is because of the large amount of code changed per test phase, in this case around 7800 changed methods, which requires many tests to be executed to cover all changes.
 Second, most of their end-to-end tests have a high code coverage per test case which can result in a large set of test cases covering a single change.
 Pareto Testing yields the optimal cost limit L<sub>o</sub>=15%, for which approximately 61% of failures are detected. 
